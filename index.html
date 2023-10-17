@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6b17c91111.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fontshowcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pixelify+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header" id="header">
+      <figure class="header__logo">
+        <i class="fa-solid fa-pen"></i>
+      </figure>
+
+      <div class="header__rightWrapper">
+        <label for="toggle" class="header__label">
+          <input class="header__input" type="checkbox" id="toggle" onchange="changeBackgroundColor()"/>
+        </label>
+        
+        <figure class="header__avatar">
+          <img class="header__image" src="./img/avatar.webp" alt="">
+        </figure>
+      </div>
+    </section>
+
+    <article class="showcase" id="showcase">
+      <input id="js--input" type="text" class="showcase__input" />
+      <section class="showcase__section">
+        
+        
+
+        <div class="showcase__wrapper">
+          <h3 class="showcase__font">DancingScript</h3>
+          <button class="heart">
+            <i class="fa-regular fa-heart showcase__heart"></i>
+          </button>
+          
+        </div>
+        
+
+        <h2 id="js--Dancing" class="showcase__output showcase__output--cursive">Placeholder output</h2>
+      </section>
+      <section class="showcase__section">
+        
+
+        <div class="showcase__wrapper">
+          <h3 class="showcase__font">PixelifySans</h3>
+          <button class="heart">
+            <i class="fa-regular fa-heart showcase__heart"></i>
+          </button>
+        </div>
+
+        <h2 id="js--Pixelify" class="showcase__output showcase__output--sanSerif">Placeholder output</h2>
+      </section>
+      <section class="showcase__section">
+        
+
+        <div class="showcase__wrapper">
+          <h3 class="showcase__font">ShadowsIntoLight</h3>
+          <button class="heart">
+            <i class="fa-regular fa-heart showcase__heart"></i>
+          </button>
+        </div>
+        
+        <h2 id="js--Shadows" class="showcase__output showcase__output--serif">Placeholder output</h2>
+      </section>
+    </article>
+  </body>
+</html>

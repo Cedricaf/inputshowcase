@@ -1,0 +1,104 @@
+@use '../../abstract/mixings';
+@use '../../abstract/colors';
+@use '../../abstract/animations';
+
+
+.showcase{
+  background: colors.$background;
+  width: 80vw;
+  max-width: 150rem;
+  gap: 4rem;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: inset 0 0 5rem rgba(73, 165, 164, 0.4);
+  @include animations.popup;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+
+  &__input{
+    font-size: 100%;
+    padding: 2rem;
+    width: 50%;
+    border: none;
+    background: none;
+    border-bottom: 0.02rem solid #1f507e;
+    padding-left: 0;
+
+    &:focus{
+      outline: none;
+
+    }
+
+  }
+
+  &__section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__wrapper{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+  }
+
+  &__font{
+    font-size: 150%;
+    font-weight: 500;
+  }
+
+
+ &__heart{
+  font-size: 120%;
+  color: colors.$cyan;
+  &:hover{
+    cursor: pointer;
+  }
+
+ }
+
+ &__heart.fa-solid{
+  color: colors.$cyan;
+ }
+
+  &::before{
+    transform: translateX(-50%);
+    background: colors.$cyan;
+
+  }
+  &::after{
+    transform: translateY(-50%);
+    background: colors.$cyan;
+  }
+
+
+  &__output{
+    color: black;
+    font-size: 250%;
+
+    &--cursive{
+      @include mixings.fontDancingScript;
+    }
+
+    &--sanSerif{
+      @include mixings.fontPixelifySans;
+    }
+
+    &--serif{
+      @include mixings.fontShadowsIntoLight;
+
+    }
+
+  }
+
+
+
+
+  
+}

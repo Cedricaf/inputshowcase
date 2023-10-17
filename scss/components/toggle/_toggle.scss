@@ -1,0 +1,41 @@
+@use '../../abstract/colors';
+
+
+.header__input{
+    width: 12rem;
+    height: 6rem;
+    border-radius: 5rem;
+    border: 0.1rem solid red;
+    appearance: none;
+    position: relative;
+    background: colors.$background;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:checked{
+        transition: 0.4s;
+        background: black;
+    }
+
+    &:checked::after{
+        left: 80%;
+        
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        height:7rem;
+        width: 7rem;
+        border-radius: 50%;
+        background: colors.$gradient;
+        top: 50%;
+        left: 24%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+
+}
+

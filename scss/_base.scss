@@ -1,0 +1,17 @@
+@use './abstract/colors';
+@use './abstract/mixings';
+
+
+body{
+    background: colors.$gradient;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+
+

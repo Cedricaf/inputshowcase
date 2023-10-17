@@ -1,0 +1,33 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+@mixin rotate($duration: 0.5s){
+    transform: rotate(360deg);
+    transition: 0.6s all;
+    transition-timing-function: linear;
+}
+
+
+@mixin fontDancingScript{
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+}
+
+@mixin fontPixelifySans{
+    font-weight: 400;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+@mixin fontShadowsIntoLight{
+    font-weight: 400;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+
+
+
